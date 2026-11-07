@@ -62,63 +62,63 @@ tugas-uts-web1/
 
 Pengguna memasukkan email dan password. Validasi format email dilakukan dengan regex dan pesan error tampil di bawah kolom. Jika email atau password tidak sesuai dengan `dataPengguna`, muncul alert **"Email/password yang anda masukkan salah"**.
 
-![Halaman login](screenshots/01-login.png)
+![Halaman login](screenshots/img-1.png)
 
 Validasi isian login (email tidak valid dan password kosong):
 
-![Validasi login](screenshots/02-login-validasi.png)
+![Validasi login](screenshots/img-2.png)
 
 Tombol **Lupa Password** dan **Daftar** membuka modal box. Akun yang didaftarkan disimpan di localStorage dan bisa langsung dipakai login.
 
-![Modal lupa password](screenshots/03-modal-lupa-password.png)
+![Modal lupa password](screenshots/img-3.png)
 
-![Modal daftar](screenshots/04-modal-daftar.png)
+![Modal daftar](screenshots/img-4.png)
 
 ### 2. Dashboard (`dashboard.html`)
 
 Menampilkan greeting sesuai jam lokal (`new Date().getHours()`): pagi (sebelum 11.00), siang (11.00-14.59), sore (15.00-17.59), malam (setelah 18.00). Terdapat empat tombol navigasi: Informasi Stok, Tracking Pengiriman, Laporan Pemesanan, dan History Transaksi.
 
-![Dashboard](screenshots/05-dashboard.png)
+![Dashboard](screenshots/img-5.png)
 
 ### 3. Informasi Stok / Katalog (`stok.html`)
 
 Tabel (kode, nama barang, jenis, edisi, harga, stok, sampul) dibentuk secara dinamis dari variabel `dataKatalogBuku` di `js/data.js` memakai `document.createElement`. Fitur: pencarian, hapus baris, dan penambahan baris stok baru lewat form.
 
-![Katalog stok](screenshots/06-stok.png)
+![Katalog stok](screenshots/img-6.png)
 
 Validasi form tambah stok (kode, judul, kategori, harga, dan stok wajib valid; kode tidak boleh sama):
 
-![Validasi stok](screenshots/07-stok-validasi.png)
+![Validasi stok](screenshots/img-7.png)
 
 Hasil setelah menambahkan buku baru (baris baru muncul di tabel):
 
-![Tambah baris stok](screenshots/08-stok-tambah-baris.png)
+![Tambah baris stok](screenshots/img-8.png)
 
 ### 4. Pemesanan (`checkout.html`)
 
 Pengguna memilih buku dan jumlah, lalu menambahkannya ke keranjang. Jumlah di keranjang dapat diubah dan baris dapat dihapus. Subtotal, ongkir, dan total dihitung otomatis. Jumlah pesanan dibatasi oleh stok.
 
-![Keranjang pemesanan](screenshots/09-checkout-keranjang.png)
+![Keranjang pemesanan](screenshots/img-9.png)
 
 Form data pemesan dan pembayaran divalidasi (nama, email, telepon, alamat, metode pembayaran):
 
-![Validasi pemesanan](screenshots/10-checkout-validasi.png)
+![Validasi pemesanan](screenshots/img-10.png)
 
 Jika valid, pesanan disimpan dan modal menampilkan nomor Delivery Order:
 
-![Pesanan berhasil](screenshots/11-checkout-sukses.png)
+![Pesanan berhasil](screenshots/img-11.png)
 
 ### 5. Informasi Pengiriman (`tracking.html`)
 
 Input nomor Delivery Order. Data dibaca dari `dataTracking` berdasarkan nomor DO. Setelah tombol **Cari** ditekan tampil nama pemesan, status pengiriman (progress bar: Diterima, Di Hub, Dalam Perjalanan, Selesai Antar), ekspedisi, tanggal kirim, jenis paket, total pembayaran, dan tabel riwayat perjalanan paket. Nomor yang tidak ditemukan memicu alert.
 
-![Hasil tracking](screenshots/12-tracking-hasil.png)
+![Hasil tracking](screenshots/img-12.png)
 
 ### 6. Riwayat Transaksi (`riwayat.html`)
 
 Menampilkan seluruh transaksi, gabungan data `dataTracking` dan pesanan baru yang dibuat dari halaman pemesanan.
 
-![Riwayat transaksi](screenshots/13-riwayat.png)
+![Riwayat transaksi](screenshots/img-13.png)
 
 ## Alur Berpikir Singkat
 
