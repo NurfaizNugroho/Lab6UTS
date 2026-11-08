@@ -13,7 +13,7 @@ Aplikasi web front-end sederhana untuk pemesanan buku pada toko online. Dibangun
 
 ## Tautan
 
-- **Repository:** *(isi link GitHub, pastikan public)*
+- **Repository:** *(https://github.com/NurfaizNugroho/Lab6UTS.git)*
 - **Video penjelasan (YouTube):** *(isi link YouTube, pastikan public/unlisted dapat diakses)*
 
 ## Cara Menjalankan
