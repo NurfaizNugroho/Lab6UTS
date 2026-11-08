@@ -21,7 +21,7 @@ Aplikasi web front-end sederhana untuk pemesanan buku pada toko online. Dibangun
 1. Unduh atau clone repository ini.
 2. Buka file `index.html` di browser (Chrome, Edge, atau Firefox). Tidak perlu instalasi apa pun.
 3. Login dengan salah satu akun dari `data.js`:
-   - Email: `nurfaiznugroho2@gmail.com`, Password: `Faizganteng26` (User)
+   - Email: `rina@gmail.com`, Password: `rina123` (User)
    - Email: `siti@gmail.com`, Password: `siti123` (Admin)
 4. Nomor Delivery Order contoh untuk halaman tracking: `20230012` (Dalam Perjalanan) dan `20230013` (Dikirim/selesai antar).
 
@@ -112,13 +112,23 @@ Jika valid, pesanan disimpan dan modal menampilkan nomor Delivery Order:
 
 Input nomor Delivery Order. Data dibaca dari `dataTracking` berdasarkan nomor DO. Setelah tombol **Cari** ditekan tampil nama pemesan, status pengiriman (progress bar: Diterima, Di Hub, Dalam Perjalanan, Selesai Antar), ekspedisi, tanggal kirim, jenis paket, total pembayaran, dan tabel riwayat perjalanan paket. Nomor yang tidak ditemukan memicu alert.
 
-![Hasil tracking](screenshots/img-12.png)
+![Hasil tracking](screenshots/img-12.png.png)
 
 ### 6. Riwayat Transaksi (`riwayat.html`)
 
 Menampilkan seluruh transaksi, gabungan data `dataTracking` dan pesanan baru yang dibuat dari halaman pemesanan.
 
 ![Riwayat transaksi](screenshots/img-13.png)
+
+### 7. Informasi Akun dan Logout
+
+Setelah login, navbar menampilkan tombol profil (inisial dan nama depan). Jika diklik, muncul modal **Informasi Akun** berisi nama, peran (User/Admin), email, dan waktu login. Data diambil dari `sessionStorage` yang disimpan saat login.
+
+![Informasi akun](screenshots/img-14.png)
+
+Tombol **Keluar** (di navbar maupun di modal akun) meminta konfirmasi, lalu menghapus sesi dan kembali ke halaman login. Setelah logout, membuka halaman lain langsung diarahkan ke login (proteksi halaman).
+
+![Setelah logout](screenshots/img-15.png)
 
 ## Alur Berpikir Singkat
 
