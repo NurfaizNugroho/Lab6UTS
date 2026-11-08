@@ -112,7 +112,7 @@ Jika valid, pesanan disimpan dan modal menampilkan nomor Delivery Order:
 
 Input nomor Delivery Order. Data dibaca dari `dataTracking` berdasarkan nomor DO. Setelah tombol **Cari** ditekan tampil nama pemesan, status pengiriman (progress bar: Diterima, Di Hub, Dalam Perjalanan, Selesai Antar), ekspedisi, tanggal kirim, jenis paket, total pembayaran, dan tabel riwayat perjalanan paket. Nomor yang tidak ditemukan memicu alert.
 
-![Hasil tracking](screenshots/img-12.png.png)
+![Hasil tracking](screenshots/img-12.png)
 
 ### 6. Riwayat Transaksi (`riwayat.html`)
 
